@@ -63,7 +63,7 @@ export default class OtherMarkerMaps extends React.Component{
                                        onDragEnd={this.updateMarker}
                         >
                             <PersonalPin color={marker.pinColor} quantidade={marker.quantidade}/>
-                            <PersonalCallout title={marker.title} description={marker.description} />
+                            <PersonalCallout title={marker.title} description={marker.description}/>
                         </Marker>
                     })}
                 </MapView>

@@ -12,13 +12,12 @@ import {Callout} from 'react-native-maps';
 
 export default class PersonalCallout extends React.Component{
 
-    //TODO ver problema da API para renderizar Callout personalizado
     render(){
         return(
-            <Callout tooltip={true}>
-                <View styles={styles.calloutView}>
-                    <Text styles={styles.calloutTitle}>{this.props.title}</Text>
-                    <Text styles={styles.calloutDescription}>{this.props.description}</Text>
+            <Callout>
+                <View style={styles.calloutView}>
+                    <Text style={styles.calloutTitle}>{this.props.title}</Text>
+                    <Text style={styles.calloutDescription}>{this.props.description}</Text>
                 </View>
             </Callout>
         );
@@ -27,19 +26,20 @@ export default class PersonalCallout extends React.Component{
 
 const styles = StyleSheet.create({
     calloutView:{
-        width:200,
-        height:200,
+        width:100,
+        height:100,
         backgroundColor:'white'
     },
     calloutTitle:{
         fontSize:12,
+        fontWeight:'bold',
         textAlign:'center',
         textAlignVertical:'center'
     },
     calloutDescription:{
         fontSize:10,
-        textAlign:'justify',
-        textAlignVertical:'center'
+        textAlign:'center',
+        textAlignVertical:'auto'
     }
 
 });
