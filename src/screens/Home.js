@@ -18,6 +18,9 @@ export default class Home extends React.Component{
                 <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('UseMaps')}>
                     <Text style={styles.textButton}>Mapas</Text>
                 </TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('OtherMarkerMaps')}>
+                    <Text style={styles.textButton}>Marcadores personalizados</Text>
+                </TouchableOpacity>
             </View>
         );
     }
@@ -29,7 +32,7 @@ const styles = StyleSheet.create({
         alignItems:'center'
     },
     button: {
-        width:200,
+        width:220,
         height:50,
         alignItems:'center',
         backgroundColor: '#006400',

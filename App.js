@@ -11,6 +11,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Home from './src/screens/Home';
 import SimpleLocation from './src/screens/SimpleLocation';
 import UseMaps from './src/screens/UseMaps';
+import OtherMarkerMaps from './src/screens/OtherMarkerMaps';
 
 const Stack = createStackNavigator();
 function App() {
@@ -30,6 +31,10 @@ function App() {
               name="UseMaps"
               component={UseMaps}
               options={{headerLeft: null, title: 'Mapas', headerStyle: {backgroundColor: '#006400'}, headerTintColor: '#fff'}} />
+          <Stack.Screen
+              name="OtherMarkerMaps"
+              component={OtherMarkerMaps}
+              options={{headerLeft: null, title: 'Personal Marker', headerStyle: {backgroundColor: '#006400'}, headerTintColor: '#fff'}} />
         </Stack.Navigator>
       </NavigationContainer>
   );

@@ -17,9 +17,9 @@ export default class UseMaps extends React.Component{
         this.state={
             mapType:'standard',
             markers:[
-                {key:0, coords:{latitude:-31.766108372781073, longitude:-52.35215652734042}, image:require('../images/ic_map_car_blue.png'), title:'IFSul', description:'Instituto Federal Sul-rio-grandense'},
+                {key:0, coords:{latitude:-31.7661083, longitude:-52.3521565}, image:require('../images/ic_map_car_blue.png'), title:'IFSul', description:'Instituto Federal Sul-rio-grandense'},
                 {key:1, coords:{latitude:-31.7659234, longitude:-52.3460221}, image:require('../images/ic_map_car_green.png'),title:'Santa Casa', description:'Hospital Santa Casa'},
-                {key:2, coords:{latitude:-31.7810932, longitude:-52.325668}, image:require('../images/ic_map_car_blue.png'), title:'UFPel Anglo', description:'Universidade Federal de Pelotas'},
+                {key:2, coords:{latitude:-31.7810932, longitude:-52.325668},  image:require('../images/ic_map_car_blue.png'), title:'UFPel Anglo', description:'Universidade Federal de Pelotas'},
                 {key:3, coords:{latitude:-31.7736143, longitude:-52.3392507}, image:require('../images/ic_map_car_green.png'), title:'UCPel', description:'Universidade Católica de Pelotas'},
                 {key:4, coords:{latitude:-31.7702478, longitude:-52.3418384}, image:require('../images/ic_map_car_blue.png'), title:'Prefeitura', description:'Prefeitura Municipal' }
             ]
